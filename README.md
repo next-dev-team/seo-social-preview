@@ -13,6 +13,7 @@ A link shortening service that generates rich social media previews (Open Graph/
 
 ## Tech Stack
 
+- **AI Assistance**: Gemini 3 Pro, GPT 5
 - **Backend**: Node.js, Express, TypeScript
 - **Database**: SQLite (via Prisma ORM) - *Easily switchable to PostgreSQL*
 - **Frontend**: HTML, Tailwind CSS (CDN), Vanilla JS
