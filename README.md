@@ -2,6 +2,14 @@
 
 A link shortening service that generates rich social media previews (Open Graph/Twitter Card) for any URL. It detects social media bots and serves them a dynamic HTML page with optimized meta tags, while redirecting regular users to the destination URL.
 
+## Why This Project Was Created
+
+Social media previews are crucial, but client-side apps (like CRA) often fail to provide them because bots don't execute JavaScript. This project acts as an intermediary, generating short links, scraping metadata, serving dynamic HTML previews to bots, and redirecting real users. This ensures rich social media previews for any URL without complex SSR.
+
+## Solution for Client-Side Rendered Apps (e.g., CRA) and Mobile Apps
+
+This service helps client-side rendered (CSR) apps like CRA and mobile apps overcome challenges with social media previews. For CSR apps, it generates rich previews by detecting bots and serving dynamic HTML with meta tags, then redirects users to the original app. For mobile apps, it allows generating short links with custom metadata for deep links, ensuring consistent rich previews on social media. This boosts visibility and engagement for both.
+
 ## Features
 
 - **Short Link Generation**: Create short, memorable links.
@@ -148,6 +156,17 @@ Deletes the link and its analytics history.
 ├── prisma/                      # Database Schema
 └── dist/                        # Compiled output
 ```
+
+### Screenshots
+
+- **Create Link Page:**
+  ![Create Link Page](public/create.png)
+- **Dashboard (List of Links):**
+  ![Dashboard](public/list.png)
+- **Analytics Dashboard:**
+  ![Analytics Dashboard](public/analytics.png)
+- **Telegram Preview Example:**
+  ![Telegram Preview](public/telegram.png)
 
 ## License
 
